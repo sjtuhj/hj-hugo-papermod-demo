@@ -43,10 +43,6 @@ languages:
         这是[本人站点](https://huangjia.site/)的源码！😜 欢迎使用，根据需要修改对应信息~✨</br>
 
         我的邮箱：hjroyal@foxmail.com
-    taxonomies:
-      category: categories
-      tag: tags
-      series: series
     menu:
       main:
         - identifier: search
@@ -95,26 +91,21 @@ languages:
         - This is the source code of my site [**Royal Huang**](https://huangjia.site/en/)! 😜  Welcome! You need to modify the corresponding information to your own content.
 
         - Email: hjroyal@foxmail.com
-    taxonomies:
-      category: ENcategories
-      tag: ENtags
-      series: ENseries
     menu:
       main:
         - name: 🏷️Tags
-          url: entags
+          url: tags
           weight: 3
         - name: 🗃️Series
-          url: enseries
+          url: series
           weight: 5
         - name: 📂Archives
           url: archives/
           weight: 10
         - name: 🔍️Search
           url: search/
-          weight: 1
-        # - name: ENCategories
-        #   url: encategories
+        # - name: Categories
+        #   url: categories
         # - name: NullLink
         #   url: "#"
 
@@ -123,6 +114,11 @@ outputs:
     - HTML
     - RSS
     - JSON
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
 
 # 这里的参数会被代码以 .Site.Params 的形式读取
 params:
@@ -148,6 +144,8 @@ params:
   VisitCount: true
   ShowLastMod: true #显示文章更新时间
   copyright: true
+  seriesTitle: "📚️ 系列"
+  tagsTitle: "🧩 标签"
   cover:
     hidden: false # hide everywhere but not in structured data
     hiddenInList: false # hide on list pages and home
@@ -195,7 +193,7 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    keys: ["", "", ""]
+    keys: ["title", "permalink", "summary"]
 
   StartYear: 2020 # 底部开始年份
   FilingNo: 测试ICP备2022000001号 # 底部备案号

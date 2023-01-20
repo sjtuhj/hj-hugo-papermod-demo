@@ -4,9 +4,9 @@ date: 2020-10-17
 lastmod: 2022-10-08
 author: ["Royal Huang"]
 
-ENtags: ["test","hugo"]
-ENcategories: ["", ""]
-ENseries: ["hugo"]
+tags: ["test","hugo"]
+categories: ["", ""]
+series: ["hugo"]
 description: "This is a test page!"
 weight: 1
 slug: ""

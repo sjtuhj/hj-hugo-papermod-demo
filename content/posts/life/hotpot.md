@@ -5,8 +5,8 @@ lastmod: 2023-01-05
 author: ["Royal Huang"]
 keywords: ["",""]
 categories: ["",""] # 没有分类界面可以不填写
-tags: ["",""] # 标签
-series: [""] # 系列
+tags: ["hotpot","sichuan","chongqing"] # 标签
+series: ["food","spicy"] # 系列
 description: "请欣赏川味火锅！"
 weight:  #值越小首页越靠前
 slug: ""  # 使用 slug属性 来作为当前文章的有效 url 的末尾部分 ；如果没有提供 slug 则使用 title 代替。
