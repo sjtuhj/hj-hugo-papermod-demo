@@ -237,4 +237,5 @@
 {{- if (site.Params.randomImage.enable | default true) }}
 {{- $random_image_js := resources.Get "js/random-image.js" | js.Build (dict "params" (dict "opt" .Site.Params.randomImage)) | resources.Minify }}
 <script defer crossorigin="anonymous" src="{{ $random_image_js.RelPermalink }}"></script>
-{{- end -}}
+{{- end -}} 
+

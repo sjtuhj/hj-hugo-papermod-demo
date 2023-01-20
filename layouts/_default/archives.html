@@ -76,6 +76,9 @@
         <h3 class="archive-entry-title">
           {{- .Title | markdownify }}
           {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+          <!-- 归档页面显示 [置顶] 标识怪怪的，所以这里没添加 -->
+          <!-- 加入下面这行，表示 outer 值为 true 的文章标题后添加 [转载] 标识 -->
+          {{- if (.Param "outer") }}<sup><span class="x-entry-isouter">&nbsp;&nbsp;[转载]</span></sup>{{- end }}
         </h3>
         <div class="archive-meta">
           {{- partial "post_meta.html" . -}}

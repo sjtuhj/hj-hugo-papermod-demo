@@ -90,6 +90,8 @@
         {{- end }}
 
         <footer class="post-footer">
+            {{ partial "breadcrumbs.html" . }}
+            <!-- 面包屑导航 -->
             <!--{{- if .Params.tags }}
             <ul class="post-tags">
                 {{- range ($.GetTerms "tags") }}

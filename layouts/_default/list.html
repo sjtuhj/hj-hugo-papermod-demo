@@ -55,6 +55,10 @@
       <h2>
         {{- .Title }}
         {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+        <!-- 加入下面这行，表示 weight 值为 1 的文章标题后添加 [置顶] 标识 -->
+        {{- if (eq .Weight 1) }}<sup><span class="x-entry-istop">&nbsp;&nbsp;[top]</span></sup>{{- end }}
+        <!-- 加入下面这行，表示 outer 值为 true 的文章标题后添加 [转载] 标识 -->
+        {{- if (.Param "outer") }}<sup><span class="x-entry-isouter">&nbsp;&nbsp;[outer]</span></sup>{{- end }}
       </h2>
     </header>
     {{- if (ne (.Param "hideSummary") true) }}

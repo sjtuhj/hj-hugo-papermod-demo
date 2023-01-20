@@ -19,7 +19,7 @@ hidemeta: false # 是否隐藏文章的元信息，如发布日期、作者等
 disableShare: false # 底部不显示分享栏
 showbreadcrumbs: true #顶部显示路径
 cover:
-    image: "" #图片路径例如：cn/posts/tech/123/123.png #因为使用中英双站，故图片地址要加cn,英文站也是加cn
+    image: "https://source.unsplash.com/random/940x400?film"  #图片路径例如：cn/posts/tech/123/123.png #因为使用中英双站，故图片地址要加cn,英文站也是加cn
     caption: "" #图片底部描述
     alt: ""
     relative: false
