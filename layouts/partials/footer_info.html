@@ -1,0 +1,40 @@
+<footer class="footer">
+    <span> Copyright &copy; {{ .Site.Params.StartYear }}-{{ now.Year }} <a href="/cn/">Royal Huang</a></span>
+    All Rights Reserved
+
+    <span>·&nbsp;<a href="/cn/copyright/">版权说明</a></span>
+    <span>·&nbsp;{{- partial "stat.html" (dict "Kind" "total") }}</span> </br>
+
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod" rel="noopener" target="_blank">PaperMod</a> 
+    </span>
+    
+    ·&nbsp;
+    <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#939393;">{{ .Site.Params.FilingNo }}</a>&nbsp;
+
+    <!-- <span>
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=null"
+           style="display:inline-block;text-decoration:none;height:20px;color:#939393;">
+            <img src="/img/beian.png" style="float:left;margin: 0px 5px 0px 0px;"/>
+            {{ .Site.Params.PublicNetworkSecurity }}
+        </a>
+    </span> -->
+   
+
+    <span id="busuanzi_container">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        ·&nbsp;本站由<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img src="/img/又拍云_logo5.png" height="28" align="absmiddle" style="float:center;margin: 0px 0px 4px 0px;"></a><span>提供 CDN 加速/云存储服务</span>
+
+
+        <!-- <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+         <i class="fa fa-child" style="font-size:13px"></i> <span id="busuanzi_value_site_uv"></span>
+         <i class="fa fa-eye" style="font-size:13px"></i> <span id="busuanzi_value_site_pv"></span> -->
+    </span>
+
+
+
+
+</footer>

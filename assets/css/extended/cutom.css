@@ -1,0 +1,28 @@
+.swiper-container {
+    max-width: 820px;
+    margin: 2em auto;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin: 0 !important;
+    }
+}
+
+.x-random-img {
+    border-radius: 0 !important;
+}
+
+/* 文章页面内的随机图片水平居中 */
+.post-content .x-random-img {
+    margin: 1rem auto;
+}

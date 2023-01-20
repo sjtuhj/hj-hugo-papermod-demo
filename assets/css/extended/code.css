@@ -1,0 +1,59 @@
+/*代码*/
+.post-content code {
+    font-size: 0.8em;
+    line-height: 1.4 !important;
+    font-family: Source Code Pro !important;
+    /*font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;*/
+    /* Source Code Pro, Menlo, Consolas, Monaco, monospace */
+}
+
+.post-content .highlight pre {
+    tab-size: 4 !important;
+}
+
+.post-content .highlight:not(table),
+.post-content pre {
+    /* box-shadow: 1px 5px 5px 1px #272C34; */
+    border-radius: var(--radius);
+}
+
+.dark .post-content .highlight:not(table),
+.post-content pre {
+    /* box-shadow: 1px 5px 5px 1px #f5f5f5; */
+    border-radius: var(--radius);
+}
+
+.post-content :not(table) ::-webkit-scrollbar-thumb {
+    /* border: 2px solid #E5BF78; */
+}
+
+.post-content pre code {
+    max-height: 40em;
+    /* 控制日间模式最大代码行高度 */
+    margin-bottom: 2%;
+    /* background: var(--tag); */
+    /*box-shadow: 5px 5px 5px rgb(68 68 68 / 60%);*/
+    background: var(--entry);
+    /*border: 2px 2px 2px 0px solid black;*/
+    /* background: rgb(225, 232, 240); */
+}
+
+.dark .post-content pre code {
+    max-height: 40em;
+    /* 控制夜间模式最大代码行高度 */
+    margin-bottom: 2%;
+    /* color: rgba(180, 181, 182, 0.8); */
+    color: #0b0c0c;
+    /*box-shadow: 5px 5px 5px rgb(68 68 68 / 60%);*/
+    background: var(--hljs-bg);
+    /* border: 2px 2px 2px 0px solid black; */
+    /*background: var(--tertiary);*/
+}
+
+.hljs {
+    color: black !important;
+}
+
+.dark .hljs {
+    color: #c0c5ce !important;
+}
